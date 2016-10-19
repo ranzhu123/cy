@@ -1,5 +1,5 @@
 # cy
-99
+
 > A Vue.js project
 
 ## Build Setup
