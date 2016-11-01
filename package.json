@@ -5,22 +5,27 @@
   "private": true,
   "scripts": {
     "dev": "node ./build/dev-server.js",
-    "build": "webpack --display-modules --display-chunks --config build/webpack.prod.config.js",
+    "build": "webpack --display-modules --display-chunks --config ./build/webpack.prod.config.js",
     "lint": "eslint main.js test"
   },
   "dependencies": {
+    "babel-plugin-transform-runtime": "^6.15.0",
     "babel-preset-stage-0": "^6.16.0",
     "css-loader": "^0.25.0",
     "eslint-friendly-formatter": "^2.0.6",
     "eslint-plugin-html": "^1.5.5",
     "eslint-plugin-promise": "^3.3.0",
     "eslint-plugin-standard": "^2.0.1",
+    "extract-text-webpack-plugin": "^1.0.1",
     "html-webpack-plugin": "^2.24.0",
     "scss-loader": "0.0.1",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "vue": "^2.0.1",
-    "vue-hot-reload-api": "^2.0.6"
+    "vue-hot-reload-api": "^2.0.6",
+    "vue-html-loader": "^1.2.3",
+    "vue-loader": "^8.2.1",
+    "webpack": "^1.12.2"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",

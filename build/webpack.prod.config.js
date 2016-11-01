@@ -27,13 +27,13 @@ config.plugins = [
             warnings: false
         }
     }),
-    new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.optimize.OccurrenceOrderPlugin(),
     // 提取css为单文件
-    new ExtractTextPlugin("../[name].[contenthash].css"),
+    new ExtractTextPlugin("../static/[name].[contenthash].css"),
 
     new HtmlWebpackPlugin({
         filename: '../index.html',
-        template: path.resolve(__dirname, '../app/index/index.html'),
+        template: path.resolve(__dirname, '../template/index.html'),
         inject: true
     })
 ];

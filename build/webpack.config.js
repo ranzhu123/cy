@@ -19,7 +19,7 @@ module.exports = {
     chunkFilename: '[id].[chunkhash].js'
   },
   module: {
-    rules: [
+    preloaders: [
       // {
       //   test: /\.vue$/,
       //   loader: 'eslint',
@@ -32,6 +32,8 @@ module.exports = {
       //   include: projectRoot,
       //   exclude: /node_modules/
       // },
+    ],
+    loaders: [
       {
         test: /\.vue$/,
         loader: 'vue',
