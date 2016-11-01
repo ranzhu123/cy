@@ -1,8 +1,7 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
     <h1>{{ msg }}</h1>
-    <button :click="ci">干啥啊</button>
+    <button v-on:click="ccc">干啥啊</button>
   </div>
 </template>
 
@@ -12,11 +11,11 @@ export default {
   data () {
     return {
       msg: '然猪来'
-    }
+    };
   },
-  method: {
-    ci () {
-      this.mes = "砸你啊干啥啊"
+  methods: {
+    ccc: function (){
+      this.msg = "恩你啊干啥啊";
     }
   }
 }
